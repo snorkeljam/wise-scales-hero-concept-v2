@@ -11,7 +11,7 @@
 <div data-concept="a">
   <div class="hero">
     <video class="bg-video" id="bgVideo" autoplay muted loop playsinline aria-hidden="true">
-      <source src="assets/hero-v8-ai-test-rough2.mp4" type="video/mp4">
+      <source src="assets/hero-v9-jerrycan-swap.mp4" type="video/mp4">
     </video>
     <div class="hero-scrim" aria-hidden="true"></div>
     <button class="video-toggle" id="videoToggle" type="button" aria-pressed="false" aria-label="Pause background video">
@@ -20,13 +20,14 @@
     </button>
     <nav class="hero-nav" id="heroNav">
       <div class="brand-block">
-        <img class="logo-img" id="siteLogo" src="assets/logo.png" alt="WISE Scales">
-        <span class="site-url">wisescales.org</span>
+        <img class="logo-img" id="siteLogo" src="assets/logo-color-whitetext.png" alt="WISE Scales">
       </div>
       <div class="links">
         <a href="understand-it.html">Understand it</a>
-        <a href="#">Find your scale</a>
-        <a href="#">Get the manual</a>
+        <a href="do-your-part.html">Do your part</a>
+        <a href="find-your-scale.html">Find your scale</a>
+        <a href="see-the-impact.html">See the Impact</a>
+        <a href="get-the-manual.html">Get the manual</a>
       </div>
     </nav>
     <div class="hero-content">
@@ -42,27 +43,51 @@
 
 <section class="rich-section wise-section" id="wise-section">
   <div class="wise-section-inner">
-    <h2 class="wise-heading">The questions of the WISE Scales help us bring the lived experience of water into focus. Here are 4 of them:</h2>
+    <h2 class="wise-heading">The questions of the WISE Scales help us bring the lived experience of water into focus. Here are a few of them:</h2>
     <div class="wise-grid" id="wiseGrid">
-      <div class="wise-box" data-word="WORRY" data-question="How often did you worry that you would not have enough water for all of your needs?">
-        <img class="wise-icon" src="assets/icons/worry.png" alt="" aria-hidden="true">
-        <p class="wise-word">WORRY</p>
-        <p class="wise-question"></p>
+      <div class="flip-card wise-flip-card" data-tone="blue">
+        <div class="flip-card-inner">
+          <div class="flip-card-front wise-flip-front">
+            <img class="wise-flip-icon" src="assets/icons/worry.png" alt="">
+            <p class="wise-flip-word">WORRY</p>
+          </div>
+          <div class="flip-card-back wise-flip-back">
+            <p class="wise-flip-question">How often did you worry that you would not have enough water for all of your needs?</p>
+          </div>
+        </div>
       </div>
-      <div class="wise-box" data-word="PLANS" data-question="How often did you have to change schedules or plans because of problems with water?">
-        <img class="wise-icon" src="assets/icons/plans.png" alt="" aria-hidden="true">
-        <p class="wise-word">PLANS</p>
-        <p class="wise-question"></p>
+      <div class="flip-card wise-flip-card" data-tone="purple">
+        <div class="flip-card-inner">
+          <div class="flip-card-front wise-flip-front">
+            <img class="wise-flip-icon" src="assets/icons/plans.png" alt="">
+            <p class="wise-flip-word">PLANS</p>
+          </div>
+          <div class="flip-card-back wise-flip-back">
+            <p class="wise-flip-question">How often did you have to change schedules or plans because of problems with water?</p>
+          </div>
+        </div>
       </div>
-      <div class="wise-box" data-word="HANDS" data-question="How often were you not able to wash your hands after dirty activities because of problems with water?">
-        <img class="wise-icon" src="assets/icons/hands.png" alt="" aria-hidden="true">
-        <p class="wise-word">HANDS</p>
-        <p class="wise-question"></p>
+      <div class="flip-card wise-flip-card" data-tone="teal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front wise-flip-front">
+            <img class="wise-flip-icon" src="assets/icons/hands.png" alt="">
+            <p class="wise-flip-word">HANDS</p>
+          </div>
+          <div class="flip-card-back wise-flip-back">
+            <p class="wise-flip-question">How often were you not able to wash your hands after dirty activities because of problems with water?</p>
+          </div>
+        </div>
       </div>
-      <div class="wise-box" data-word="DRINK" data-question="How often did you not have as much water to drink as you would have liked?">
-        <img class="wise-icon" src="assets/icons/drink.png" alt="" aria-hidden="true">
-        <p class="wise-word">DRINK</p>
-        <p class="wise-question"></p>
+      <div class="flip-card wise-flip-card" data-tone="ink">
+        <div class="flip-card-inner">
+          <div class="flip-card-front wise-flip-front">
+            <img class="wise-flip-icon" src="assets/icons/drink.png" alt="">
+            <p class="wise-flip-word">DRINK</p>
+          </div>
+          <div class="flip-card-back wise-flip-back">
+            <p class="wise-flip-question">How often did you not have as much water to drink as you would have liked?</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -113,7 +138,7 @@
       <span class="section-kicker">Global Impact</span>
       <h2 class="impact-headline">Water insecurity data for half the world</h2>
       <p class="impact-body">The WISE Scales improve the measurement of water-related issues faced by households and individuals. They help scientists, program developers, community leaders, and policymakers assess the extent of water insecurity, track changes over time, inform policy and program development, and evaluate intervention effectiveness in more than 70 countries.</p>
-      <a class="section-cta" href="#">Learn more about how to get involved
+      <a class="section-cta" href="see-the-impact.html">Learn more about how to get involved
         <svg class="cta-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -138,11 +163,12 @@
   <img class="founder-photo" src="assets/sera-young.jpg" alt="Sera Young">
   <div class="founder-scrim" aria-hidden="true"></div>
   <div class="founder-veil" aria-hidden="true"></div>
-  <div class="founder-content">
-    <span class="section-kicker">Founder and Director</span>
-    <h2 class="founder-name">Sera Young</h2>
+  <div class="founder-quote-box">
     <p class="founder-quote">&ldquo;Water insecurity isn&rsquo;t invisible. It&rsquo;s just unmeasured. The WISE Scales give communities, governments, and researchers a shared language to finally see it, name it, and act on it.&rdquo;</p>
-    <p class="founder-attribution">Sera L. Young, MA, PhD</p>
+  </div>
+  <div class="founder-bio">
+    <span class="section-kicker">Founder and Director</span>
+    <h2 class="founder-attribution">Sera L. Young, MA, PhD</h2>
     <p class="founder-title">Professor of Anthropology &amp; Global Health Studies, Northwestern University<br>Co-Director, Center for Water Research<br>Morton O. Schapiro Faculty Fellow, Institute for Policy Research<br>Co-Editor-in-Chief, PLOS Water<br>Lead, Water, Nutrition and Health Equity, United Nations University Institute for Water, Environment, and Health</p>
     <a class="section-cta" href="#">Learn more about Sera
       <svg class="cta-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -164,13 +190,16 @@
 <footer class="rich-section site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img class="footer-logo" src="assets/logo.png" alt="WISE Scales">
+      <img class="footer-logo" src="assets/logo-color-whitetext.png" alt="WISE Scales">
       <p class="footer-tagline">Measuring water insecurity, household by household.</p>
     </div>
     <nav class="footer-links" aria-label="Footer">
+      <a href="index.html">Home</a>
       <a href="understand-it.html">Understand it</a>
-      <a href="#">Find your scale</a>
-      <a href="#">Get the manual</a>
+      <a href="do-your-part.html">Do your part</a>
+      <a href="find-your-scale.html">Find your scale</a>
+      <a href="see-the-impact.html">See the Impact</a>
+      <a href="get-the-manual.html">Get the manual</a>
     </nav>
   </div>
   <p class="footer-copy">&copy; 2026 WISE Scales. All rights reserved.</p>

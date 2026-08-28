@@ -126,55 +126,6 @@
     }, 3800);
   }
 
-  var wiseBoxes = Array.prototype.slice.call(document.querySelectorAll(".wise-box"));
-  if (wiseBoxes.length) {
-    function setWordState(box) {
-      var wordEl = box.querySelector(".wise-word");
-      var questionEl = box.querySelector(".wise-question");
-      wordEl.textContent = box.dataset.word;
-      wordEl.classList.remove("is-header");
-      questionEl.textContent = "";
-    }
-    if (reduceMotion) {
-      wiseBoxes.forEach(function (box) {
-        box.querySelector(".wise-word").classList.add("is-header");
-        box.querySelector(".wise-question").textContent = box.dataset.question;
-      });
-    } else {
-      function typeBoxAt(index) {
-        if (index >= wiseBoxes.length) {
-          setTimeout(function () {
-            wiseBoxes.forEach(setWordState);
-            setTimeout(function () { typeBoxAt(0); }, 700);
-          }, 7000);
-          return;
-        }
-        var box = wiseBoxes[index];
-        var wordEl = box.querySelector(".wise-word");
-        var questionEl = box.querySelector(".wise-question");
-        var question = box.dataset.question;
-        wordEl.classList.add("is-header");
-        setTimeout(function () {
-          var ci = 0;
-          (function typeChar() {
-            ci++;
-            questionEl.innerHTML = question.slice(0, ci) + "<span class=\"cursor\"></span>";
-            if (ci < question.length) {
-              setTimeout(typeChar, 60);
-            } else {
-              setTimeout(function () {
-                questionEl.textContent = question;
-                setTimeout(function () { typeBoxAt(index + 1); }, 900);
-              }, 300);
-            }
-          })();
-        }, 450);
-      }
-      wiseBoxes.forEach(setWordState);
-      typeBoxAt(0);
-    }
-  }
-
   var slideshows = document.querySelectorAll(".explainer-slideshow");
   if (slideshows.length && !reduceMotion) {
     slideshows.forEach(function (slideshow) {
