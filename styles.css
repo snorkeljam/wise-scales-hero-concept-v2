@@ -615,13 +615,16 @@ a:focus-visible, button:focus-visible {
   justify-content: space-between;
   padding: clamp(4rem, 9vw, 7rem) clamp(1.25rem, 4vw, 3rem) clamp(3rem, 8vw, 6rem);
   overflow: hidden;
+  background: #0b0c14;
 }
 .founder-photo {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center 22%;
+  object-fit: contain;
+  object-position: center;
   z-index: 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent);
 }
 .founder-scrim {
   position: absolute; inset: 0;
@@ -639,6 +642,23 @@ a:focus-visible, button:focus-visible {
 .founder-section.is-visible .founder-veil { opacity: 0; }
 @media (prefers-reduced-motion: reduce) {
   .founder-veil { display: none; }
+}
+.founder-flash {
+  position: absolute; inset: 0;
+  z-index: 2;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+}
+.founder-section.is-visible .founder-flash {
+  animation: founder-flash-pop 0.7s ease-out 0.85s 1;
+}
+@keyframes founder-flash-pop {
+  0% { opacity: 0.85; }
+  100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .founder-flash { display: none; }
 }
 .founder-section .section-kicker { color: var(--warm); position: relative; z-index: 2; }
 .founder-quote-box {
